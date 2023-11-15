@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import { Button, Dialog, DialogActions } from "@mui/material";
 
@@ -49,7 +49,6 @@ function MyDialog({
       open={open}
       style={{ background }}
       onClose={handleCancel}
-      onAnimationStart={focusButton}
       onTransitionEnd={focusButton}
     >
       <DialogActions>
